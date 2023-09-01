@@ -1,0 +1,59 @@
+.slider-skill{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+   
+
+    &__wrapper{
+        display: flex;
+        padding-bottom: 40px;
+    }
+    
+    
+      &__slide{
+        text-align: center;
+        flex-shrink: 0;
+      }
+
+
+    &__button-next, &__rtl &__button-prev{
+    position: absolute;
+    right: 0 !important;
+    top: 50%; 
+    left: auto;
+    }
+
+    &__button-prev, &__rtl &__button-next{
+    position: absolute;
+    left: 0 !important; 
+    top: 50%;
+    right: auto;
+    }
+    
+    &__pagination{
+        width: auto !important;
+
+        margin: 0;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    @media (min-width: 1025px) {
+      &__pagination{
+        display: none;
+      }
+      &__button-next{
+        display: none;
+      }
+
+      &__button-prev{
+        display: none;
+      }
+    }
+    
+    
+     
+  }

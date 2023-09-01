@@ -1,0 +1,66 @@
+.header{
+
+    &__main{
+        height: var(--header-main);
+
+    }
+
+    &__wrapper{
+        position: relative;
+    }
+    
+   
+      
+     
+
+  
+
+
+    &__logo{
+        display: flex;
+    }
+
+    &__nav{
+        border-bottom: 1px solid rgba(130, 130, 130, 1);
+    }
+
+
+    
+
+    @media (max-width: 767px) {
+
+        &__wrapper{
+            padding-top: 68px;
+        }
+
+        &__nav{
+            border-bottom: none;
+            display: none;
+        }
+
+     
+
+        &__main{
+            display: flex;
+            justify-content: end;
+        }
+
+        
+
+
+        
+
+    }
+
+   
+    
+
+
+      
+
+
+
+
+}
+
+

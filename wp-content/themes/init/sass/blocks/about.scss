@@ -1,0 +1,22 @@
+.about{
+    background-color: #F6F6F6;
+
+
+
+    &__description{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+
+        max-width: 485.344px;
+        margin: 0px auto;
+    }
+    &__title{
+        padding-bottom: 18px;
+    }
+
+   
+
+  
+}

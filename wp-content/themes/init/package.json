@@ -1,0 +1,48 @@
+{
+  "name": "init",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Theme init",
+  "license": "GPL-2.0-or-later",
+  "keywords": [
+    "WordPress",
+    "Theme"
+  ],
+  "devDependencies": {
+    "@wordpress/scripts": "^19.2.2",
+    "dir-archiver": "^1.1.1",
+    "node-sass": "^7.0.1",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
+    "rtlcss": "^3.5.0",
+    "uglify-js": "^3.17.4"
+  },
+  "rtlcssConfig": {
+    "options": {
+      "autoRename": false,
+      "autoRenameStrict": false,
+      "blacklist": {},
+      "clean": true,
+      "greedy": false,
+      "processUrls": false,
+      "stringMap": []
+    },
+    "plugins": [],
+    "map": false
+  },
+  "scripts": {
+    "node-sass": "node-sass sass/ -o ./css/ --source-map true --output-style expanded --indent-type tab --indent-width 1 -w",
+    "uglify": "uglifyjs js/scripts/custom/*.js -o ./js/scripts.js -c -m --source-map",
+    "onchange-uglify": "onchange 'js/scripts/custom/*.js' -- npm run uglify",
+    "watch": "npm-run-all -p node-sass onchange-uglify",
+    "compile:css": "node-sass sass/**/* -o ./css/ && stylelint '*.css' --fix || true && stylelint '*.css' --fix",
+    "compile:rtl": "rtlcss style.css style-rtl.css",
+    "lint:scss": "wp-scripts lint-style 'sass/**/*.scss'",
+    "lint:js": "wp-scripts lint-js 'js/*.js'",
+    "bundle": "dir-archiver --src . --dest ../init.zip --exclude .DS_Store .stylelintrc.json .eslintrc .git .gitattributes .github .gitignore README.md composer.json composer.lock node_modules vendor package-lock.json package.json .travis.yml phpcs.xml.dist sass style.css.map yarn.lock"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.1",
+    "tippy.js": "^6.3.7"
+  }
+}

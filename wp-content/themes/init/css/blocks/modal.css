@@ -1,0 +1,51 @@
+.modal-menu {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	z-index: 2;
+	background-color: #fff;
+}
+
+.modal-menu__nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+.modal-menu__container {
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	position: relative;
+}
+
+.modal-menu__bottom {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding-bottom: 40px;
+}
+
+.modal-menu__lang {
+	color: black;
+	font-size: 34px;
+	line-height: 45.22px;
+	font-weight: 350;
+	transform: rotate(0deg);
+	writing-mode: vertical-lr;
+}
+
+@media (max-width: 375px) {
+	.modal-menu__lang {
+		font-size: 25px;
+	}
+}
+
+.modal-menu.active {
+	display: block;
+}
+
+/*# sourceMappingURL=modal.css.map */

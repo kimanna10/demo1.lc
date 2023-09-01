@@ -1,0 +1,30 @@
+:root {
+	--theme: #ff1515;
+	--theme-text: #ffffff;
+	--dark: #fb0000;
+	--green: #2DAF53;
+	--blue: #1760e7;
+	--blue-focus: rgba(23, 96, 231, 0.3);
+	--bg-grey: #f6f6f9;
+	--border-shadow: rgba(255, 21, 21, 0.3);
+	--bg-active: rgba(166, 190, 246, 0.2);
+	--text: rgba(25, 36, 61, 0.55);
+	--text-dark: #19243d;
+	--border: rgba(7, 18, 119, 0.06);
+	--logo-height: 5rem;
+	--admin-bar: 0px;
+	--fz: 1.5rem;
+	--smaller: 1.4rem;
+	--small: 1.35rem;
+	--v-small: 1.2rem;
+	--large: calc(var(--fz) * 1.1);
+	--v-large: calc(var(--fz) * 1.2);
+	--field: 5rem;
+	--field-padding: 0 calc(var(--field) / 2);
+	--field-bg: var(--bg-grey);
+	--admin-bar: 0px;
+	--header-main: 5rem;
+	--padding: 2.4rem;
+}
+
+/*# sourceMappingURL=variables.css.map */

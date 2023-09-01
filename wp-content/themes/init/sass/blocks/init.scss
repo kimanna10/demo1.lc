@@ -1,0 +1,173 @@
+.init{
+
+    padding-top: 40px;
+
+
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 33.7px;
+    }
+    &__container{
+        position: relative;
+    }
+    
+
+    &__title{
+
+        a{
+            color: #070707;
+            text-decoration: none;
+        }
+     
+        font-size: 47.34px;
+        line-height: 62.96px;
+        font-weight: 350;
+        width: 123.51px;
+    }
+
+    &__text{
+        color: black;
+            font-size: 18px;
+            line-height: 23.94px;
+            font-weight: 350;
+            width: 155.65px;
+    }
+
+    &__lang{
+            color: black;
+            font-size: 16px;
+            line-height: 21.28px;
+            font-weight: 350;
+
+            
+            writing-mode: vertical-lr;
+            transform: rotate(180deg);
+        
+    }
+
+    &__img{
+        
+        img {
+            max-width: 100%; 
+            height: auto;
+
+            display: flex;
+          }
+
+    }
+
+    &__img{
+        img:last-child {
+            display: none;
+          }
+          
+    }
+    &__btn{
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: none;
+        cursor: pointer;
+
+        z-index: 3;
+    }
+
+    &__bar1, &__bar2, &__bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #070707;
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+      
+      .change &__bar1 {
+        transform: translate(0, 11px) rotate(-45deg);
+        background-color: #828282;
+      }
+      
+      .change &__bar2 {opacity: 0;}
+      
+      .change &__bar3 {
+        transform: translate(0, -11px) rotate(45deg);
+        background-color: #828282;
+      }
+
+
+
+
+    @media (min-width: 1200px) {
+
+    }
+    
+    @media (min-width: 992px) and (max-width: 1199px) {
+
+    }
+    
+    @media (min-width: 768px) and (max-width: 991px) {
+        
+    }
+    
+    
+    
+    @media  (max-width: 767px) {
+
+        &__header{
+            display: inline-block;
+        }
+
+        &__lang{
+            display: none;
+        }
+
+        &__img{
+            img:first-child {
+                display: none;
+              }
+              
+        }
+
+        &__img{
+            img:last-child {
+                display: block;
+              }
+              
+        }
+        &__btn{
+            display: block;
+        }
+    }
+    
+    @media (min-width: 320px) and (max-width: 479px) {
+
+
+    }
+    
+    @media (max-width: 320px) {
+    }
+
+    
+}
+
+
+
+
+.title{
+    color: #070707;
+    font-size: 34px;
+    line-height: 45.22px;
+    font-weight: 350;
+    text-align: center;
+}
+
+.text{
+    color: #070707;
+    font-size: 18px;
+    line-height: 23.94px;
+    font-weight: 350;
+    text-align: center;
+}
+
+
+
